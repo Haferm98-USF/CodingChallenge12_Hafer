@@ -27,3 +27,11 @@ function stopDrawing()
 {
     isDrawing = false;
 }
+
+
+
+const colorPicker = document.getElementById('colorPicker');
+colorPicker.addEventListener('input', (e) => {selectedColor = e.target.value});
+
+const clearButton = document.getElementById('clearCanvas');
+clearButton.addEventListener('click', () => {ctx.clearRect(0, 0, canvas.clientWidth, canvas.height)});
